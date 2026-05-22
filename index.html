@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sal’s Strawberry Saloon</title>
   <link rel="stylesheet" href="style.css" />
 
-<!-- Firebase App (core Firebase SDK) is always required & must be listed 1st -->
+  <!-- Firebase App (core Firebase SDK) is always required & must be listed 1st -->
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
   <!-- Add Firebase products that you want to use -->
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
@@ -17,21 +18,22 @@
   <script src="fb_io.js"></script>
 
 </head>
+
 <body>
   <div class="container">
-    <h1>Sal’s Strawberry Saloon</h1>
-    <h2>(and other fruit products)</h2>
+    <h1>G.E.T.G.O</h1>
+    <h2>(Go Eat Then Get Out)</h2>
 
     <button onclick="fb_login()">Login with Google</button>
-
+    <button onclick="fb_logout()">Logout</button>
     <form id="fruitForm">
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required />
 
-      <label for="favoriteFruit">Favorite Fruit:</label>
+      <label for="favoriteFruit">Your food order:</label>
       <input type="text" id="favoriteFruit" name="favoriteFruit" required />
 
-      <label for="fruitQuantity">How many servings per week?</label>
+      <label for="fruitQuantity">Give us tips please we're broke:</label>
       <input type="number" id="fruitQuantity" name="fruitQuantity" required />
 
       <!-- add more fields here -->
@@ -42,4 +44,5 @@
     <p id="statusMessage"></p>
   </div>
 </body>
+
 </html>
